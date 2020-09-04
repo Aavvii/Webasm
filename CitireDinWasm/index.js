@@ -13,7 +13,7 @@ function ___sys_read(fd, buf, count)
 */
 function _read_from_prompt()
 {
-  console.log("Am fost apelat");
+  console.log("A fost apelata functia de citire");
   var input = prompt("Scrie un numar","");
   parseInt(input,10);
   return input;
