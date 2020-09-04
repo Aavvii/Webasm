@@ -1,0 +1,1 @@
+Asta merge pentru declarat memorie in js si important in wasm
