@@ -5,7 +5,7 @@ var importObject = {
 };
 
 var str;
-str = prompt("Scrieti o propozitie apoi verificati consola","");
+str = prompt("Scrieti o propozitie","");
 /*
 str= str.split(" ");
 
