@@ -65,47 +65,10 @@
     local.get $index
     ;;Daca indexul maxim este in continuare mai mare sau egal, merg la inceputul forului
     i32.gt_u
-    br_if $_FOR1 ;; IF TRUE then LABEL, else BREAK
+    br_if $_FOR1 ;; IF TRUE then BREAK, else LABEL
   end
 
-  ;;resetez indexul
-  i32.const 0
-  local.set $index
-
-  ;;Aici o sa calculez maximul
-  i32.const 0
-  local.set $max
-
-  ;;Parcurg din nou vectorul
-  loop $_FOR2
-    local.get $varPointer1
-    local.get $index
-    i32.add
-    ;;Iau elementul din vector si il adun in suma
-    i32.load
-    local.get $max
-    i32.gt_u
-    if $I1
-      local.get $varPointer1
-      local.get $index
-      i32.add
-      i32.load
-      local.set $max
-    end
-
-    local.get $index
-    i32.const 4
-    i32.add
-    local.set $index
-
-    local.get $nrOfElements
-    local.get $index
-    i32.gt_u
-    br_if $_FOR2
-  end
-
-  ;;In stiva trebuie sa ramana doar maximul.
-  local.get $max
+  local.get $varPointer1
   return
 
   )
