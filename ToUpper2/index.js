@@ -11,7 +11,7 @@ var importObject = {
 };
 
 var str;
-str = prompt("Scrieti o propozitie","");
+str = prompt("Scrie o propozitie apoi verifica consola.","");
 
 WebAssembly.instantiateStreaming(fetch('main.wasm'), importObject )
 .then(results => {
