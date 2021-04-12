@@ -22,10 +22,7 @@
         i32.const 10
         i32.div_u
         local.set $temp
-        local.get $temp
-        i32.const 0
-        i32.gt_u
-        br_if $_while1
+        
       end
     end
     local.get $inv
