@@ -48,8 +48,8 @@ function _return_one_element_from_array()
           memoryBase: 0,
           tableBase: 0,
           memory: new WebAssembly.Memory({
-            initial: 10,
-            maximum: 256,
+            initial: 1,
+            maximum: 1,
           }),
           table: new WebAssembly.Table({
             initial: 1,
