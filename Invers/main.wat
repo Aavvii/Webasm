@@ -3,8 +3,8 @@
     (local $inv i32) (local $temp i32)
     i32.const 0
     local.set $inv
-	  local.get $p0
-	  local.set $temp
+    local.get $p0
+    local.set $temp
     loop $_while1
       local.get $inv
       i32.const 10
